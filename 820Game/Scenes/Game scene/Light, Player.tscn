@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Game scene/OriginLight.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Game scene/KinematicBody.gd" type="Script" id=2]
+[ext_resource path="res://Art/cont_frame.png" type="Texture" id=3]
+[ext_resource path="res://Art/controller_knob.png" type="Texture" id=4]
+
+[sub_resource type="SphereMesh" id=1]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="OriginLight" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="OriginLight"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.306, 9, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Camera" type="Camera" parent="OriginLight"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 9.83529, 0, 0 )
+size = 6.43978
+
+[node name="Controller" type="KinematicBody" parent="."]
+script = ExtResource( 2 )
+
+[node name="contPeri" type="TextureRect" parent="Controller"]
+margin_left = 50.0
+margin_top = 1800.0
+margin_right = 690.0
+margin_bottom = 1960.0
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 3 )
+
+[node name="contKnob" type="TextureRect" parent="Controller"]
+margin_left = 50.0
+margin_top = 1800.0
+margin_right = 690.0
+margin_bottom = 1960.0
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 4 )
+

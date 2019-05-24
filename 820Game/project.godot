@@ -16,13 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="820"
-run/main_scene="res://Scenes/Game.tscn"
+run/main_scene="res://Scenes/Game scene/Light, Player.tscn"
 
 [display]
 
 window/size/width=1080
-window/size/height=1920
-window/size/fullscreen=true
+window/size/height=2280
 window/handheld/orientation="portrait"
 window/stretch/aspect="keep"
 
