@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Scenes/Game scene/OriginLight.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Game scene/KinematicBody.gd" type="Script" id=2]
+[ext_resource path="res://Objects/OriginLight.gd" type="Script" id=1]
+[ext_resource path="res://Objects/KinematicBody.gd" type="Script" id=2]
 [ext_resource path="res://Art/cont_frame.png" type="Texture" id=3]
 [ext_resource path="res://Art/controller_knob.png" type="Texture" id=4]
 
